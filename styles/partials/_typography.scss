@@ -1,0 +1,24 @@
+h1 {
+    @include headingText($h1FontSize) 
+}
+
+h2 {
+    @include headingText($h2FontSize)
+}
+
+h3 {
+    @include headingText($h3FontSize)
+}
+
+.nav__item {
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.nav__item a {
+    font-family: 'Catamaran', sans-serif;
+    color: $primaryFontColor;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}

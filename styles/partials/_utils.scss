@@ -1,0 +1,41 @@
+// Variables
+$primaryFontColor: #2a2a2a;
+$accentFontColor: #285d64;
+
+$h1FontSize: 4rem;
+$h2FontSize: 2.3rem;
+$h3FontSize: 2rem;
+
+// Mixins
+@mixin headingText($fontSize) {
+    font-size: $fontSize;
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: $primaryFontColor;
+}
+
+@mixin paragraph($fontSize) {
+    font-size: $fontSize; 
+    font-family: 'Lato', sans-serif;
+    color: $primaryFontColor;
+}
+
+    // <!-- h1's are 80px// (resize) -->
+    // <!-- h2's are 46px font size (resize) -->
+    // <!-- h3's are 32px font size(adobe assets so find the right size) -->
+
+// Breakpoint Mixins 
+
+@mixin breakPoint($point) {
+  @if $point == large {
+    @media (max-width: 940px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 480px)  { @content; }
+  }
+}
+

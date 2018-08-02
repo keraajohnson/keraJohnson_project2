@@ -1,0 +1,27 @@
+@import "partials/setup";
+@import "partials/utils";
+@import "partials/typography";
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
+
+// Global Styles
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1080px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+// img {
+//     width: 100%;
+//     display: block;
+// }

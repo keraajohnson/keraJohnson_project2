@@ -1,0 +1,30 @@
+header {
+    background-image: url(../../assets/image-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 1px;
+}
+
+header .container {
+    display: flex;
+}
+
+
+header .header__nav {
+    flex: 2 0 70%;
+}
+
+header .header__nav nav ul {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.nav__item {
+    
+}
+
+.header__text {
+    flex: 1 0 30%;
+}
