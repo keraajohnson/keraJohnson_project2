@@ -1,74 +1,139 @@
 
 
 // Welcome Section Styles SECTION ONE
-.welcome-section {
+.welcomeSection {
     text-align: center;
-    padding: 80px 0;
+    @include padding-top-bottom(); 
 }
 
-.welcome-section__paragraph {
+.welcomeSection__paragraph {
     max-width: 57%;
     margin: 20px auto;
 }
 
 // Services Section Styles SECTION TWO
-.services-section {
+.servicesSection {
+    @include padding-top-bottom();
     background: #bec884;
     text-align: center;
-    padding: 60px 0;
 }
 
-.services-section__cell-container{
-    display: flex;
-}
-
-.services-cell {
+.servicesSection__cell  {
     flex: 1 0 33%;
     padding: 30px 55px;
 }
 
-.services-section__icon {
+.servicesSection__icon {
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
 // Testimonials Section Styles SECTION THREE
-.testimonials-section {
-    margin: 60px 0;
+.testimonialsSection {
+    @include padding-top-bottom();
 }
 
-.testimonials-section--container{
-    display: flex;
-}
-
-.testimonials-section__heading {
+.testimonialsSection__heading {
     margin: 10px 0px 10px 20px;
 }
 
-.testimonials-section__paragraph {
+.testimonialsSection__paragraph {
     max-width: 70%;
     margin: 10px 0px 10px 20px;
 }
 
 // Gallery Section Styles SECTION FOUR
 
-.gallery__cell {
+.gallery__container {
     max-width: 25%;
+    position: relative;
 }
 
-// Happy Clients Section Styles
-.SECTION-FIVE {
-    background: #efefef;
+.gallery__container:hover .gallery__cell {
+    opacity: 1;
 }
+
+.gallery__cell {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.gallery__text--white {
+    color: white;
+}
+
+// Happy Clients Section Styles SECTION FIVE
+.clientsSection {
+    @include padding-top-bottom();
+    background: #efefef;
+    text-align: center;
+}
+
+// come back and change clients section
 
 // Latest News Section Styles
-.SECTION-SIX {
+.newsSection {
+    @include padding-top-bottom();
     background: #f5f3f3;
+    text-align: center;
+}
+
+.newsSection__cell {
+    margin: 0 10px;
+    text-align: left;
+}
+
+// THIS isn't working
+.newsSection__text {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.newsSection__link {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 0;
+    letter-spacing: .5px;
 }
 
 // Ask A Question Section Styles
-.SECTION-SEVEN {
+.questionSection {
+    @include padding-top-bottom();
     background: #f2b094;
+    text-align: center;
+}
+
+.questionForm {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.formQuestion {
+    align-self: stretch;
+    padding: 10px 0;
+    border: none;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    background: none;
 }
 
 // Latest Shoots Section Styles

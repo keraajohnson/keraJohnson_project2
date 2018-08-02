@@ -167,7 +167,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   line-height: 25px;
   font-size: 1.5rem; }
 
-.text-blue {
+.textBlue {
   color: #285d64; }
 
 .btn {
@@ -182,32 +182,32 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   background: none;
   padding: 12px 15px; }
 
-.header-main {
+.headerMain {
   background-image: url(../../assets/image-1.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   padding: 1px; }
 
-.container--flex {
+.containerFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.header-main__top {
+.headerMain__top {
   margin-top: 25px; }
 
-.header-main__text {
+.headerMain__text {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 30%;
   flex: 1 0 30%; }
 
-.header__nav {
+.headerMain__nav {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%; }
 
-.header__nav--container {
+.headerNav__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,71 +218,143 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.header__nav-list-item {
+.headerNav__listItem {
   font-size: 1.5rem;
   list-style: none; }
 
-.nav-item {
+.navItem {
   font-family: 'Catamaran', sans-serif;
   color: #2a2a2a;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600; }
 
-.welcome-section {
+.welcomeSection {
   text-align: center;
-  padding: 80px 0; }
+  padding: 90px 0; }
 
-.welcome-section__paragraph {
+.welcomeSection__paragraph {
   max-width: 57%;
   margin: 20px auto; }
 
-.services-section {
+.servicesSection {
+  padding: 90px 0;
   background: #bec884;
-  text-align: center;
-  padding: 60px 0; }
+  text-align: center; }
 
-.services-section__cell-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.services-cell {
+.servicesSection__cell {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 33%;
   flex: 1 0 33%;
   padding: 30px 55px; }
 
-.services-section__icon {
+.servicesSection__icon {
   font-size: 3rem;
   margin-bottom: 10px; }
 
-.testimonials-section {
-  margin: 60px 0; }
+.testimonialsSection {
+  padding: 90px 0; }
 
-.testimonials-section--container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.testimonials-section__heading {
+.testimonialsSection__heading {
   margin: 10px 0px 10px 20px; }
 
-.testimonials-section__paragraph {
+.testimonialsSection__paragraph {
   max-width: 70%;
   margin: 10px 0px 10px 20px; }
 
+.gallery__container {
+  max-width: 25%;
+  position: relative; }
+
+.gallery__container:hover .gallery__cell {
+  opacity: 1; }
+
 .gallery__cell {
-  max-width: 25%; }
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
 
-.SECTION-FIVE {
-  background: #efefef; }
+.gallery__text--white {
+  color: white; }
 
-.SECTION-SIX {
-  background: #f5f3f3; }
+.clientsSection {
+  padding: 90px 0;
+  background: #efefef;
+  text-align: center; }
 
-.SECTION-SEVEN {
-  background: #f2b094; }
+.newsSection {
+  padding: 90px 0;
+  background: #f5f3f3;
+  text-align: center; }
+
+.newsSection__cell {
+  margin: 0 10px;
+  text-align: left; }
+
+.newsSection__text {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.newsSection__link {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 0;
+  letter-spacing: .5px; }
+
+.questionSection {
+  padding: 90px 0;
+  background: #f2b094;
+  text-align: center; }
+
+.questionForm {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; }
+
+.formQuestion {
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  padding: 10px 0;
+  border: none;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background: none; }
 
 .SECTION-EIGHT {
   background: #efefef; }
