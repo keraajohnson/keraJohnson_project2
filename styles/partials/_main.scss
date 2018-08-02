@@ -1,8 +1,59 @@
 
 
-// Services Section Styles
-.SECTION-TWO {
+// Welcome Section Styles SECTION ONE
+.welcome-section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.welcome-section__paragraph {
+    max-width: 57%;
+    margin: 20px auto;
+}
+
+// Services Section Styles SECTION TWO
+.services-section {
     background: #bec884;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.services-section__cell-container{
+    display: flex;
+}
+
+.services-cell {
+    flex: 1 0 33%;
+    padding: 30px 55px;
+}
+
+.services-section__icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+// Testimonials Section Styles SECTION THREE
+.testimonials-section {
+    margin: 60px 0;
+}
+
+.testimonials-section--container{
+    display: flex;
+}
+
+.testimonials-section__heading {
+    margin: 10px 0px 10px 20px;
+}
+
+.testimonials-section__paragraph {
+    max-width: 70%;
+    margin: 10px 0px 10px 20px;
+}
+
+// Gallery Section Styles SECTION FOUR
+
+.gallery__cell {
+    max-width: 25%;
 }
 
 // Happy Clients Section Styles

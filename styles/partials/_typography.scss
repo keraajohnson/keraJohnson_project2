@@ -1,24 +1,35 @@
-h1 {
+.heading-one {
     @include headingText($h1FontSize) 
 }
 
-h2 {
+.heading-two {
     @include headingText($h2FontSize)
 }
 
-h3 {
+.heading-three {
     @include headingText($h3FontSize)
 }
 
-.nav__item {
-    font-size: 1.5rem;
-    list-style: none;
+.paragraph {
+    @include paragraph(1.2rem)
 }
 
-.nav__item a {
-    font-family: 'Catamaran', sans-serif;
-    color: $primaryFontColor;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
+.main-section__paragraph {
+    line-height: 25px;
+    font-size: 1.5rem;
 }
+
+.text-blue {
+    color: $accentFontColor;
+}
+
+.btn {
+    @include headingText(1.2rem); 
+    font-weight: 700;
+    border: 1px solid $primaryFontColor;
+    background: none;
+    padding: 12px 15px;
+    // border-radius: 40%;
+}
+
+

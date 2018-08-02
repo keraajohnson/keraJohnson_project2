@@ -6,13 +6,10 @@
 @import "partials/footer";
 
 // Global Styles
-* {
-    margin: 0;
-    padding: 0;
-}
 
 html {
     font-size: 62.5%;
+    list-style: none;
 }
 
 .container {
@@ -21,7 +18,7 @@ html {
     margin: 0 auto;
 }
 
-// img {
-//     width: 100%;
-//     display: block;
-// }
+img {
+    max-width: 100%;
+    display: block;
+}

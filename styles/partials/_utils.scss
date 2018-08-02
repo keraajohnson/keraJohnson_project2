@@ -12,6 +12,7 @@ $h3FontSize: 2rem;
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.3px;
+    margin: 0;
     color: $primaryFontColor;
 }
 
@@ -19,6 +20,8 @@ $h3FontSize: 2rem;
     font-size: $fontSize; 
     font-family: 'Lato', sans-serif;
     color: $primaryFontColor;
+    margin: 0;
+    line-height: 17px;
 }
 
     // <!-- h1's are 80px// (resize) -->

@@ -132,56 +132,82 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-h1 {
+.heading-one {
   font-size: 4rem;
   font-family: 'Catamaran', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.3px;
+  margin: 0;
   color: #2a2a2a; }
 
-h2 {
+.heading-two {
   font-size: 2.3rem;
   font-family: 'Catamaran', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.3px;
+  margin: 0;
   color: #2a2a2a; }
 
-h3 {
+.heading-three {
   font-size: 2rem;
   font-family: 'Catamaran', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.3px;
+  margin: 0;
   color: #2a2a2a; }
 
-.nav__item {
-  font-size: 1.5rem;
-  list-style: none; }
-
-.nav__item a {
-  font-family: 'Catamaran', sans-serif;
+.paragraph {
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
   color: #2a2a2a;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600; }
+  margin: 0;
+  line-height: 17px; }
 
-header {
+.main-section__paragraph {
+  line-height: 25px;
+  font-size: 1.5rem; }
+
+.text-blue {
+  color: #285d64; }
+
+.btn {
+  font-size: 1.2rem;
+  font-family: 'Catamaran', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin: 0;
+  color: #2a2a2a;
+  font-weight: 700;
+  border: 1px solid #2a2a2a;
+  background: none;
+  padding: 12px 15px; }
+
+.header-main {
   background-image: url(../../assets/image-1.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   padding: 1px; }
 
-header .container {
+.container--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-header .header__nav {
-  -webkit-box-flex: 2;
-  -ms-flex: 2 0 70%;
-  flex: 2 0 70%; }
+.header-main__top {
+  margin-top: 25px; }
 
-header .header__nav nav ul {
+.header-main__text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 30%;
+  flex: 1 0 30%; }
+
+.header__nav {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%; }
+
+.header__nav--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,13 +218,62 @@ header .header__nav nav ul {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.header__text {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 30%;
-  flex: 1 0 30%; }
+.header__nav-list-item {
+  font-size: 1.5rem;
+  list-style: none; }
 
-.SECTION-TWO {
-  background: #bec884; }
+.nav-item {
+  font-family: 'Catamaran', sans-serif;
+  color: #2a2a2a;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.welcome-section {
+  text-align: center;
+  padding: 80px 0; }
+
+.welcome-section__paragraph {
+  max-width: 57%;
+  margin: 20px auto; }
+
+.services-section {
+  background: #bec884;
+  text-align: center;
+  padding: 60px 0; }
+
+.services-section__cell-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.services-cell {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 33%;
+  flex: 1 0 33%;
+  padding: 30px 55px; }
+
+.services-section__icon {
+  font-size: 3rem;
+  margin-bottom: 10px; }
+
+.testimonials-section {
+  margin: 60px 0; }
+
+.testimonials-section--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.testimonials-section__heading {
+  margin: 10px 0px 10px 20px; }
+
+.testimonials-section__paragraph {
+  max-width: 70%;
+  margin: 10px 0px 10px 20px; }
+
+.gallery__cell {
+  max-width: 25%; }
 
 .SECTION-FIVE {
   background: #efefef; }
@@ -215,14 +290,15 @@ header .header__nav nav ul {
 .footer-END {
   background: #2a2a2a; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  list-style: none; }
 
 .container {
   max-width: 1080px;
   width: 80%;
   margin: 0 auto; }
+
+img {
+  max-width: 100%;
+  display: block; }

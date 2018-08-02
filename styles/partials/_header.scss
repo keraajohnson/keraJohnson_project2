@@ -1,4 +1,6 @@
-header {
+
+// header-main styles
+.header-main {
     background-image: url(../../assets/image-1.jpeg);
     background-size: cover;
     background-position: center;
@@ -6,25 +8,41 @@ header {
     padding: 1px;
 }
 
-header .container {
+.container--flex {
     display: flex;
 }
 
-
-header .header__nav {
-    flex: 2 0 70%;
+.header-main__top {
+    margin-top: 25px;
 }
 
-header .header__nav nav ul {
+.header-main__text {
+    flex: 1 0 30%;
+}
+
+// header_nav styles
+.header__nav {
+    flex: 0 0 50%;
+}
+
+.header__nav--container {
     display: flex;
     justify-content: flex-end;
     justify-content: space-between;
 }
-
-.nav__item {
-    
+.header__nav-list-item {
+    font-size: 1.5rem;
+    list-style: none;
 }
 
-.header__text {
-    flex: 1 0 30%;
+.nav-item {
+    font-family: 'Catamaran', sans-serif;
+    color: $primaryFontColor;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
+
+
+
