@@ -25,12 +25,8 @@ $h3FontSize: 2rem;
 }
 
 @mixin padding-top-bottom() {
-    padding: 90px 0;
+    padding: 80px 0;
 }
-
-    // <!-- h1's are 80px// (resize) -->
-    // <!-- h2's are 46px font size (resize) -->
-    // <!-- h3's are 32px font size(adobe assets so find the right size) -->
 
 // Breakpoint Mixins 
 

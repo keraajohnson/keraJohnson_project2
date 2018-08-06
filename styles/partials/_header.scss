@@ -1,7 +1,7 @@
 
 // header-main styles
 .headerMain {
-    background-image: url(../../assets/image-1.jpeg);
+    background-image: url(../assets/image-1.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -25,12 +25,12 @@
     flex: 0 0 50%;
 }
 
-.headerNav__container {
+.nav__container {
     display: flex;
     justify-content: flex-end;
     justify-content: space-between;
 }
-.headerNav__listItem{
+.nav__listItem{
     font-size: 1.5rem;
     list-style: none;
 }

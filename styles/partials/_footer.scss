@@ -1,8 +1,23 @@
 
+.footerMain {
+    @include padding-top-bottom();
+}
 
+.footerMain__container{
+    width: 33%;
+}
 
+.footerMain__emailInput {
+    width: 60%;
+    border: 1px solid $primaryFontColor;
+    padding: 3px 0;
+}
+
+.footerMain__aboutUs__paragraph {
+    max-width: 55%;
+}
 
 //Footer End Section Styles
-.footer-END {
+.footerEnd {
     background: #2a2a2a;
 }

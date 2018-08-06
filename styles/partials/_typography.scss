@@ -23,6 +23,10 @@
     color: $accentFontColor;
 }
 
+.textCenter {
+    text-align: center;
+}
+
 .btn {
     @include headingText(1.2rem); 
     font-weight: 700;
