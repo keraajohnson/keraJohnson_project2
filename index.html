@@ -14,34 +14,23 @@
 <body>
     <!-- header section starts -->
     <header class="headerMain">
-        <!-- top header section starts -->
-        <section class="headerMain__top">
-            <div class="container containerFlex">
-                <div class="headerMain__text">
-                    <h3 class="heading-three">Photography</h3>
-                </div>
-                <!-- header navigation starts -->
-                <div class="headerMain__nav">
-                    <nav>
-                        <ul class="nav__container">
-                            <li class="nav__listItem"><a class="navItem" href="#">Home</a></li>
-                            <li class="nav__listItem"><a class="navItem" href="#">Gallery</a></li>
-                            <li class="nav__listItem"><a class="navItem"  href="#">Blog</a></li>
-                            <li class="nav__listItem"><a class="navItem" href="#">Bookings</a></li>
-                            <li class="nav__listItem"><a class="navItem" href="#">About Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </section>
-        <!-- main header section starts -->
-        <section class="headerMain__bottom">
-            <div class="container">
-                <h1 class="heading-one">Welcome</h1>
-                <p class="paragraph">To My Photography Website</p>
+        <div class="container containerFlex headerMain__container">
+            <nav class="headerMain__nav containerFlex">
+                <h3 class="headingThree headerMain__heading">Photography</h3>
+                <ul class="nav__container containerFlex">
+                    <li class="nav__listItem"><a class="navItem" href="#">Home</a></li>
+                    <li class="nav__listItem"><a class="navItem" href="#">Gallery</a></li>
+                    <li class="nav__listItem"><a class="navItem"  href="#">Blog</a></li>
+                    <li class="nav__listItem"><a class="navItem" href="#">Bookings</a></li>
+                    <li class="nav__listItem"><a class="navItem" href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="container headerMain__welcome containerFlex">
+                <h1 class="headingOne">Welcome</h1>
+                <p class="paragraph headerMain__paragraph">To My Photography Website</p>
                 <button class="btn">Start</button>
             </div>
-        </section>
+        </div>
     </header>
     <!-- header section ends -->
     <!-- main section begins -->
@@ -49,7 +38,7 @@
         <!-- section one // welcome section begins -->
         <section class="welcomeSection textCenter">
             <div class="container">
-                <h2 class="heading-two">Welcome To <span class="textBlue">Photography</span></h2>
+                <h2 class="headingTwo">Welcome To <span class="textBlue">Photography</span></h2>
                 <p class="paragraph main-section__paragraph welcomeSection__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut amet voluptatum placeat, beatae libero dolor asperiores, nostrum dolores eos distinctio delectus explicabo quasi odio excepturi sapiente quam temporibus corrupti corporis! Ab expedita ut quidem optio dolore saepe! Neque est quos temporibus ratione. Ex voluptatum repellendus sint eum doloribus.</p>
                 <button class="btn">more</button>
             </div>
@@ -58,21 +47,21 @@
         <!-- section two // services section starts -->
         <section class="servicesSection textCenter containerFlex">
             <div class="container">
-                <h2 class="heading-two">Services</h2>
+                <h2 class="headingTwo">Services</h2>
                 <div class="containerFlex">
                     <li class="servicesSection__cell listItem">
                         <i class="fas fa-camera servicesSection__icon"></i>
-                        <h3 class="heading-three">Portraits</h3>
+                        <h3 class="headingThree">Portraits</h3>
                         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur laudantium iusto temporibus rerum sit ipsam quaerat. Vel, iusto distinctio.</p>
                     </li>
                     <li class="servicesSection__cell listItem">
                         <i class="fas fa-leaf servicesSection__icon"></i>
-                        <h3 class="heading-three">Scenery</h3>
+                        <h3 class="headingThree">Scenery</h3>
                         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur laudantium iusto temporibus rerum sit ipsam quaerat.Vel, iusto distinctio.</p>
                     </li>
                     <li class="servicesSection__cell listItem">
                         <i class="fas fa-heart servicesSection__icon"></i>
-                        <h3 class="heading-three">Weddings</h3>
+                        <h3 class="headingThree">Weddings</h3>
                         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur laudantium iusto temporibus rerum sit ipsam quaerat. Vel, iusto distinctio.</p>
                     </li>
                 </div>
@@ -82,11 +71,11 @@
         <!-- section three // testimonials section starts -->
         <section class="testimonialsSection">
             <div class="container">
-                <h2 class="heading-two textCenter">Testimonials</h2>
+                <h2 class="headingTwo textCenter">Testimonials</h2>
                 <div class="containerFlex">
                         <img src="assets/image-2.jpeg" alt="Tall white woman standing and smiling in a field with mountains behind her. She has long brown hair and is wearing a white blouse and an orange skirt">
                     <div class="testimonialsSection__text containerFlex">
-                        <h3 class="heading-three testimonialsSection__heading">Kate Sampson</h3>
+                        <h3 class="headingThree testimonialsSection__heading">Kate Sampson</h3>
                         <p class="paragraph main-section__paragraph testimonialsSection__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem unde tempore aliquam ipsam assumenda eligendi enim perspiciatis quos libero esse modi voluptatum eum exercitationem, aspernatur inventore minus a ex.</p>
                     </div>
                 </div>
@@ -98,29 +87,29 @@
             <figure class="gallery__container">
                 <img class="image__size" src="assets/image-3.jpeg" alt="A white woman wih brown hair in a white blouse standing in the rain, shaking her head">
                 <figcaption class="gallery__cell textCenter">
-                    <h3 class="heading-three headingThree__gallery gallery__text--white">Sample Text</h3>
-                    <p class="paragraph gallery__text--white">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <h3 class="headingThree gallery__cell__text">Sample Text</h3>
+                    <p class="paragraph gallery__cell__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </figcaption>
             </figure>
             <figure class="gallery__container">
                 <img class="imageSize" src="assets/image-4.jpeg" alt="A small church-like structure on on island surrounded by dark teal water">
                 <figcaption class="gallery__cell textCenter">
-                    <h3 class="heading-three headingThree__gallery gallery__text--white">Sample Text</h3>
-                    <p class="paragraph gallery__text--white">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <h3 class="headingThree gallery__cell__text">Sample Text</h3>
+                    <p class="paragraph gallery__cell__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </figcaption>
             </figure>
             <figure class="gallery__container">
                 <img class="imageSize" src="assets/image-5.jpeg" alt="Lush green moss covers tall mountians on a beach with two boats parked on it">
                 <figcaption class="gallery__cell textCenter">
-                    <h3 class="heading-three headingThree__gallery gallery__text--white">Sample Text</h3>
-                    <p class="paragraph gallery__text--white">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <h3 class="headingThree gallery__cell__text">Sample Text</h3>
+                    <p class="paragraph gallery__cell__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </figcaption>
             </figure>
             <figure class="gallery__container">
                 <img class="imageSize" src="assets/image-6.jpeg" alt="The coast of a European city">
                 <figcaption class="gallery__cell textCenter">
-                    <h3 class="heading-three headingThree__gallery gallery__text--white">Sample Text</h3>
-                    <p class="paragraph gallery__text--white">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <h3 class="headingThree gallery__cell__text">Sample Text</h3>
+                    <p class="paragraph gallery__cell__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </figcaption>
             </figure>
         </section>
@@ -128,7 +117,7 @@
         <!-- section five //  happy clients section starts-->
         <section class="clientsSection textCenter">
             <div class="container">
-                <h2 class="heading-two">Happy Clients</h2>
+                <h2 class="headingTwo">Happy Clients</h2>
                 <div class="clientsSection__imageContainer containerFlex">
                     <i class="fas fa-angle-left clientsSection__icon"></i>
                     <img class="clientsSection__image" src="assets/image-7.jpeg" alt="Close up headshot of a woman with dark hair and dark eye make-up">
@@ -139,7 +128,7 @@
                     dolorem reprehenderit laboriosam minus. Dolor, officia cumque. Ea, id numquam nihil fuga vitae ab?Rem excepturi animi
                     debitis, sit eaque veniam cumque delectus reiciendis, architecto
                     dolores modi. Tempore mollitia saepe consequuntur voluptates fugit porro nulla consectetur.</p>
-                    <p class="paragraph">~Mary Jane ~</p>
+                    <p class="paragraph paragraph--italic">~ <em>Mary Jane</em> ~</p>
                 </div>
             </div>
         </section>
@@ -147,7 +136,7 @@
         <!-- section six // latest news section starts -->
         <section class="newsSection textCenter">
             <div class="container">
-                <h2 class="heading-two">Latest News</h2>
+                <h2 class="headingTwo">Latest News</h2>
                 <div class="containerFlex">
                     <figure class="newsSection__cell">
                         <img src="assets/image-8.jpeg" alt="An image of the Italian Coast, dark teal water surrounded with mountains with houses on the side of them">
@@ -176,7 +165,7 @@
             <!-- section seven // ask a question section starts -->
             <section class="questionSection textCenter">
                 <div class="container questionSection__container">
-                    <h2 class="heading-two">Ask A Question</h2>
+                    <h2 class="headingTwo">Ask A Question</h2>
                     <form action="" class="questionForm">
                         <label for="question"></label>
                         <input type="text" name="question" class="formQuestion" id="question">
@@ -206,13 +195,13 @@
                         <figure class="latestShoots__galleryContainer">
                             <img class="latestShoots__image" src="assets/image-11.jpeg" alt="A birds eye view of a stunningly tall waterfall that pools in dark teal water">
                             <figcaption class="gallery__cell textCenter">
-                                <h3 class="heading-three gallery__text--white">LANDING PAGE</h3>
+                                <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
                             </figcaption>
                         </figure>
                         <figure class="latestShoots__galleryContainer">
                             <img src="assets/image-12.jpeg" alt="A small village on the coast of a European city">
                             <figcaption class="gallery__cell textCenter">
-                                <h3 class="heading-three gallery__text--white">LANDING PAGE</h3>
+                                <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
                             </figcaption>
                         </figure>
                     </div>
@@ -220,13 +209,13 @@
                         <figure class="latestShoots__galleryContainer">
                             <img class="latestShoots__image" src="assets/image-13.jpeg" alt="A birds eye view of two boats parked on a beach surrounded by people and light blue sea water">
                             <figcaption class="gallery__cell textCenter">
-                                <h3 class="heading-three gallery__text--white">LANDING PAGE</h3>
+                                <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
                             </figcaption>
                         </figure>
                         <figure class="latestShoots__galleryContainer">
                             <img src="assets/image-14.jpeg" alt="A large mountain in the middle of a beach and light blue water">
                             <figcaption class="gallery__cell textCenter">
-                                <h3 class="heading-three gallery__text--white">LANDING PAGE</h3>
+                                <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
                             </figcaption>
                         </figure>
                     </div>
@@ -241,41 +230,41 @@
         <div class="container">
             <div class="containerFlex">
                 <div class="footerMain__container">
-                    <h3 class="heading-three">Contact</h3>
-                    <!-- before//after the envelope icon -->
-                    <p class="paragraph">info@delicate.com</p>
-                    <!-- before//after the phone icon -->
-                    <p class="paragraph">123 456-6789</p>
-                    <!-- before//after the pin icon -->
-                    <p class="paragraph">Toronto, ON</p>
+                    <h3 class="headingThree">Contact</h3>
+                    <i class="far fa-envelope footerMain__container__cell--icon footerMain__container__cell--emailIcon"></i>
+                    <p class="paragraph footerMain__container__cell">info@delicate.com</p>
+                    <i class="fas fa-phone footerMain__container__cell--icon footerMain__container__cell--phoneIcon"></i>
+                    <p class="paragraph footerMain__container__cell">123 456-6789</p>
+                    <i class="fas fa-map-pin footerMain__container__cell--icon footerMain__container__cell--pinIcon"></i>
+                    <p class="paragraph footerMain__container__cell">Toronto, ON</p>
                     <form class="footerMain__form" action="">
                         <label for="footerMain__emailInput"></label>
                         <input type="email" name="footerMain__emailInput" class="footerMain__emailInput paragraph" value="your email" id="footerMain__emailInput">
                     </form>
                 </div>
                 <div class="footerMain__container">
-                    <h3 class="heading-three">About Us</h3>
+                    <h3 class="headingThree">About Us</h3>
                     <p class="paragraph footerMain__aboutUs__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum ab tempora eaque deleniti odit mollitia maiores iusto laborum ipsa. Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="footerMain__container">
-                    <h3 class="heading-three">Instagram</h3>
+                    <h3 class="headingThree">Instagram</h3>
                     <div class="footerMain__instagramCell containerFlex">
-                        <img src="assets/image-15.jpeg" alt="Kayak floating in teal water">
-                        <img src="assets/image-16.jpeg" alt="Laundry hanging in front of an orange doorway">
-                        <img src="assets/image-17.jpeg" alt="A boat anchored in the bay of the European coast">
-                        <img src="assets/image-18.jpeg" alt="A green bike with red wheels parked outside of a a colorful doorway">
+                        <img class="footerMain__instagram" src="assets/image-15.jpeg" alt="Kayak floating in teal water">
+                        <img class="footerMain__instagram" src="assets/image-16.jpeg" alt="Laundry hanging in front of an orange doorway">
+                        <img class="footerMain__instagram" src="assets/image-17.jpeg" alt="A boat anchored in the bay of the European coast">
+                        <img class="footerMain__instagram" src="assets/image-18.jpeg" alt="A green bike with red wheels parked outside of a a colorful doorway">
                     </div>
                     <div class="footerMain__instagramCell containerFlex">
-                        <img src="assets/image-19.jpeg" alt="A birds eye view of the coast of a European city">
-                        <img src="assets/image-20.jpeg" alt="Colourful doorways in a winding city street">
-                        <img src="assets/image-21.jpeg" alt="A vintage red Volkwagan Beetle parked outside of a large palace in Europe">
-                        <img src="assets/image-22.jpeg" alt="Colourful houses on the side of a river with gondolas parked outside">
+                        <img class="footerMain__instagram" src="assets/image-19.jpeg" alt="A birds eye view of the coast of a European city">
+                        <img class="footerMain__instagram" src="assets/image-20.jpeg" alt="Colourful doorways in a winding city street">
+                        <img class="footerMain__instagram" src="assets/image-21.jpeg" alt="A vintage red Volkwagan Beetle parked outside of a large palace in Europe">
+                        <img class="footerMain__instagram" src="assets/image-22.jpeg" alt="Colourful houses on the side of a river with gondolas parked outside">
                     </div>
                 </div>
             </div>
             <!-- footer middle section  -->
             <section class="footerNav">
-                <h3 class="heading-three textCenter">Photography</h3>
+                <h3 class="headingThree textCenter">Photography</h3>
                     <nav>
                         <ul class="footerNav__container nav__container">
                             <li class="nav__listItem">
@@ -299,7 +288,7 @@
         </div>
         <!-- footer end section -->
         <section class="footerEnd">
-            <p class="paragraph">2017 all Rights Reserved</p>
+            <p class="paragraph footerEnd__paragraph textCenter">2017 All Rights Reserved</p>
         </section>
     </footer>
 </body>

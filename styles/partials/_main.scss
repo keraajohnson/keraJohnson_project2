@@ -20,7 +20,8 @@
 .servicesSection__cell  {
     width: 33%;
     padding: 30px 55px;
-    // WHY isn't this working!
+    display: inline-block;
+        // large break point
         @include breakPoint(large) {
             padding: 0;
         }
@@ -70,24 +71,27 @@
     left: 0;
     right: 0;
     bottom: 0;
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     opacity: 0;
     transition: all .5s;
+        // large break point
         @include breakPoint(large) {
             position: static;
-            background-color:transparent;                             opacity: 1;
-            color: #000000;
+            background-color:transparent;              
+            opacity: 1;
         }
 }
 
-.headingThree__gallery {
+.gallery__cell__text {
+    color: $whiteFontColor;
+    // large break point
     @include breakPoint(large) {
-        font-size: 1.5rem;
+        color: $primaryFontColor;
     }
 }
+
 
 // Happy Clients Section Styles SECTION FIVE
 .clientsSection {
@@ -110,6 +114,10 @@
     margin-top: 45px;
 }
 
+.paragraph--italic {
+    margin: 10px 0;
+}
+
 // Latest News Section Styles
 .newsSection {
     @include padding-top-bottom();
@@ -122,7 +130,7 @@
 }
 
 .newsSection__text{
-    @include headingText(1.3rem);
+    @include headingText(1.3rem, $primaryFontColor);
     font-weight: 700;
 }
 
@@ -168,6 +176,7 @@
     background: #efefef;
 }
 .containerFlex--latestShoots {
+    // large break point
     @include breakPoint(large) {
         flex-direction: column;
     }
@@ -193,26 +202,28 @@
 }
 
 .listItem--latestShoots {
-    @include headingText(2.8rem);
+    @include headingText(2.8rem, $whiteFontColor);
     flex-basis: 100%;
     display: block;
     margin: 30px 0;
     list-style: none;
     font-weight: 700;
-    color:#ffffff;
     text-align: center;
     transition: all .5s;
     // large break point
     @include breakPoint (large) {
-        @include headingText(1.3rem);
-        color: #ffffff;
+        @include headingText(1.3rem, $whiteFontColor);
     }
         &:hover {
             background: #2a2a2a;
             @include breakPoint(large) {
-                background: #606060;
+                background: transparent;
             }
         }
+}
+
+.latestShoots__galleryCell {
+    width: 100%;
 }
 
 .latestShoots__galleryContainer {

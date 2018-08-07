@@ -1,10 +1,25 @@
 
 .footerMain {
-    @include padding-top-bottom();
+    padding-top: 50px;
 }
 
 .footerMain__container{
     width: 33%;
+    position: relative;
+    @include breakPoint(large) {
+        width: 100%;
+    }
+}
+
+.footerMain__container__cell {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.footerMain__container__cell--icon {
+    position: absolute;
+    font-size: 1.3rem;
+    // bottom: 10px;
 }
 
 .footerMain__emailInput {
@@ -17,7 +32,26 @@
     max-width: 55%;
 }
 
+.footerMain__instagram {
+    width: calc(20% - 10px);
+    margin: 5px;
+}
+
+.footerNav {
+    padding: 30px 0 20px 0;
+    width: 40%;
+    margin: 0 auto;
+    @include breakPoint(large) {
+        width: 70%;
+    }
+}
+
 //Footer End Section Styles
 .footerEnd {
     background: #2a2a2a;
+}
+
+.footerEnd__paragraph {
+    color: white;
+    text-transform: uppercase;
 }

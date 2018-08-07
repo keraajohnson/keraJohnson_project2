@@ -1,13 +1,13 @@
-.heading-one {
-    @include headingText($h1FontSize) 
+.headingOne {
+    @include headingText($h1FontSize, $primaryFontColor) 
 }
 
-.heading-two {
-    @include headingText($h2FontSize)
+.headingTwo {
+    @include headingText($h2FontSize, $primaryFontColor)
 }
 
-.heading-three {
-    @include headingText($h3FontSize)
+.headingThree {
+    @include headingText($h3FontSize, $primaryFontColor);
 }
 
 .paragraph {
@@ -27,13 +27,24 @@
     text-align: center;
 }
 
+.listItem {
+    list-style-type: none;
+    display: block;
+}
+
 .btn {
-    @include headingText(1.2rem); 
+    @include headingText(1.2rem, $primaryFontColor); 
     font-weight: 700;
+    width: 120px;
     border: 1px solid $primaryFontColor;
     background: none;
-    padding: 12px 15px;
-    // border-radius: 40%;
+    padding: 8px 32px;
+    border-radius: 100px;
+    transition: all .3s linear;
+        &:hover {
+            background: $primaryFontColor;
+            color: white;
+        }
 }
 
 
