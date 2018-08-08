@@ -3,9 +3,11 @@
 .headerMain {
     background-image: url(../assets/image-1.jpeg);
     background-size: cover;
+    position: relative;
     background-attachment: fixed; 
     height: 100vh;
     padding: 1px;
+    // large break point
     @include breakPoint(large) {
         background: linear-gradient(to bottom, rgba(250,250,250,0.5),rgba(250,250,250,0.5)), url(../assets/image-1.jpeg);
         background-size: cover;
@@ -30,6 +32,7 @@
 }
 
 .nav__container {
+    // medium break point
     @include breakPoint(medium) {
         display: none;
     }
@@ -37,55 +40,61 @@
 
 .nav__listItem {
     @include headingText(1.5rem, $primaryFontColor);
-    // flex-basis: 100%;
     justify-content: space-between;
     list-style: none;
     padding: 0 10px;
 }
 
+.navItem {
+    font-family: 'Catamaran', sans-serif;
+    color: $primaryFontColor;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+// nav mobile styles
 .navMobile {
     display: none;
     width: 100%;
-    position: absolute;
+    padding: 1px;
+    // medium break point
     @include breakPoint(medium) {
         display: block;
     }
-}
-
-.navMobile__bars {
-    position: absolute;
-    color: $primaryFontColor;
-    font-size: 3rem;
-    top: 32px;
-    right: 10px;
-}
-
-.navMobile__exit {
-    color: $whiteFontColor;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.navMobile__menu {
-    display: none;
-    background: rgba(0,0,0, 0.7);
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80vh;
-    padding: 30px;
-}
-
-.navMobile__listItem {
-    list-style: none;
+    &__bars {
+        position: absolute;
+        color: $primaryFontColor;
+        font-size: 3rem;
+        top: 32px;
+        right: 10px;
+    }
+    &__exit {
+        color: $whiteFontColor;
+        font-size: 5rem;
+        text-align: center;
+    }
+    &__menu {
+        display: none;
+        background: rgba(0,0,0, 0.9);
+        position: fixed;
+        text-align-last: center;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 100px;
+        margin: 0;
+    }
+    &__listItem {
+        list-style: none;
+    }
 }
 
 .navMobileItem{
-    @include headingText(3rem, $whiteFontColor);
-    padding:  0 10px;
+    @include headingText(5rem, $whiteFontColor);
     list-style: none;
     text-decoration: none;
 }
@@ -103,7 +112,7 @@
     font-weight: 600;
 }
 
-// headerMain styles
+// header main text styles
 
 .headerMain__welcome {
     width: 100%;

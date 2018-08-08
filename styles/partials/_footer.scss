@@ -1,121 +1,109 @@
 
 .footerMain {
     padding-top: 50px;
-}
-
-.footerMain__cell__container {
-    @include breakPoint(medium) {
-        flex-direction: column;
+    &__cell__container {
+        // medium break point
+        @include breakPoint(medium) {
+            flex-direction: column;
+        }
     }
-}
-
-.footerMain__container{
-    width: 33%;
-    @include breakPoint(medium) {
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
+    &__container {
+        width: 33%;
+        // medium break point
+        @include breakPoint(medium) {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        } 
     }
-}
-
-.footerMain__list {
-    margin: 0;
-    padding: 0;
-}
-
-.footerMain__listItem {
-   margin: 15px 0;
-   display: block;
-
-}
-
-.footerMain__paragraph {
-    padding-left: 30px;
-    @include breakPoint(medium) {
+    &__list {
+        margin: 0;
         padding: 0;
     }
-}
-
-.footerMain__container__cell--icon {
-    position: relative;
-    font-size: 1.7rem;
-    top: 15px;
-    @include breakPoint(medium) {
-        top: -5px;
+    &__listItem {
+        margin: 10px 0;
+        display: block;
     }
-}
-
-.footerMain__form {
-    position: relative;
-}
-
-.footerMain__emailInput {
-    width: 60%;
-    border: 1px solid $primaryFontColor;
-    padding: 3px 0;
-}
-
-.footerMain__button {
-    position: absolute;
-    right: 150px;
-    top: 7px;
-    border: none;
-    background: transparent;
-    @include breakPoint(large) {
-        right: 100px;
+    &__paragraph {
+        padding-left: 30px;
+        // medium break point
+         @include breakPoint(medium) {
+            padding: 0;
+        }
     }
-    @include breakPoint(small) {
-        right: 60px;
+    &__container__cell--icon {
+        position: relative;
+        font-size: 1.7rem;
+        top: 15px;
+        // medium break point
+        @include breakPoint(medium) {
+            top: -5px;
+        }
+    } 
+     &__form {
+        position: relative;
+    }   
+    &__emailInput {
+        width: 60%;
+        border: 1px solid $primaryFontColor;
+        padding: 3px 0;
     }
-}
-
-.footerMain__aboutUs__paragraph {
-    max-width: 55%;
-    @include breakPoint(medium) {
-        max-width: 100%;
+    &__button {
+       position: absolute;
+        right: 150px;
+        top: 7px;
+        border: none;
+        background: transparent;
+        // large break point
+        @include breakPoint(large) {
+            right: 100px;
+        }
+        // small break point
+        @include breakPoint(small) {
+            right: 60px;
+        } 
     }
-}
-
-.footerMain__instagram {
-    width: calc(20% - 10px);
-    margin: 5px;
-    @include breakPoint(large) {
-        width: calc(60% - 10px);
+    &__aboutUs__paragraph {
+        max-width: 55%;
+        // medium break point
+        @include breakPoint(medium) {
+            max-width: 100%;
+        }
     }
-    @include breakPoint(medium) {
-        width: calc(30% - 10px);
-    }
+    &__instagram {
+        width: calc(20% - 10px);
+        margin: 5px;
+        // large break point
+        @include breakPoint(large) {
+            width: calc(60% - 10px);
+        }
+        // medium break point
+        @include breakPoint(medium) {
+            width: calc(30% - 10px);
+        }
+    }   
 }
 
 .footerNav {
     padding: 30px 0 20px 0;
-    width: 40%;
-    margin: 0 auto;
-    text-align: center;
-    @include breakPoint(large) {
-        width: 70%;
-    }
-    @include breakPoint(medium) {
-        width: 80%;
-    }
-    @include breakPoint(small) {
-        width: 100%;
-    }
+    width: 100%;
+        &__container {
+            padding: 0;
+            justify-content: center;
+        }
 }
 
 .navItem {
     font-size: 1.5rem;
-    @include breakPoint(medium) {
-        font-size: 1rem;
-    }
+    display: block;
 }
 
 //Footer End Section Styles
 .footerEnd {
     background: #2a2a2a;
+        &__paragraph {
+            color: white;
+            text-transform: uppercase;
+        }
 }
 
-.footerEnd__paragraph {
-    color: white;
-    text-transform: uppercase;
-}

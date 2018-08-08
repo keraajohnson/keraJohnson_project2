@@ -43,11 +43,11 @@
 // Testimonials Section Styles SECTION THREE
 .testimonialsSection {
     @include padding-top-bottom();
+    &__heading {
+         margin: 10px 0px 10px 20px;
+    }
 }
 
-.testimonialsSection__heading {
-    margin: 10px 0px 10px 20px;
-}
 
 .testimonialsSection__cell__container {
     // large break point
@@ -75,13 +75,8 @@
 .testimonialsSection__paragraph {
     max-width: 70%;
     margin: 10px 0px 10px 20px;
+    // large break point
     @include breakPoint(large) {
-        max-width: 100%;
-    }
-    @include breakPoint(medium) {
-        max-width: 100%;
-    }
-    @include breakPoint(small) {
         max-width: 100%;
     }
 }
@@ -142,80 +137,74 @@
 .clientsSection {
     @include padding-top-bottom();
     background: #efefef;
-}
-
-.clientsSection__imageContainer {
-    justify-content: center;
-}
-
-.clientsSection__image {
-    width: 11%;
-    margin: 15px;
-    @include breakPoint(medium) {
-        width: 20%;
-    }
-    @include breakPoint(small) {
-        width: 30%;
-    }
-}
-
-.clientsSection__icon {
-    font-size: 3rem;
-    color: #cacecf;
-    margin-top: 45px;
+        &__imageContainer {
+            justify-content: center;
+        }
+        &__image {
+            width: 11%;
+            margin: 15px;
+            // medium break point
+            @include breakPoint(medium) {
+                width: 20%;
+            }
+            // small break point
+            @include breakPoint(small) {
+                width: 30%;
+            }
+        }
+        &__icon {
+            font-size: 3rem;
+            color: #cacecf;
+            margin-top: 60px;
+        }
 }
 
 // Latest News Section Styles
 .newsSection {
     @include padding-top-bottom();
     background: #f5f3f3;
-}
-
-.newsSection__container {
-   // large break point
-    @include breakPoint(large) {
-        flex-direction: column;
-        margin: 0 auto;
+        &__container {
+            // large break point
+            @include breakPoint(large) {
+                flex-direction: column;
+                margin: 0 auto;
+             }
+        } 
+        &__image {
+            height: 80%;
+        }
+        &__cell {
+             width: 33%;
+            margin: 0 10px;
+            text-align: left;
+            // large break point
+            @include breakPoint(large) {
+                width: 65%;
+                margin: 25px auto;
+                text-align: center;
+            }
+            // medium break point
+            @include breakPoint(medium) {
+                width: 80%;
+            }
+            // small break point
+            @include breakPoint(small) {
+                width: 90%;
+            }
+        }
+        &__text {
+            @include headingText(1.3rem, $primaryFontColor);
+            font-weight: 700;
+        }
+        &__link {
+            display: block;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 5px 0;
+            letter-spacing: .5px;
+        }
     }
-}
-
-.newsSection__image {
-    height: 80%;
-}
-
-.newsSection__cell {
-    width: 33%;
-    margin: 0 10px;
-    text-align: left;
-    // large break point
-    @include breakPoint(large) {
-        width: 65%;
-        margin: 25px auto;
-        text-align: center;
-    }
-    // medium break point
-    @include breakPoint(medium) {
-        width: 80%;
-    }
-    // small break point
-    @include breakPoint(small) {
-        width: 90%;
-    }
-}
-
-.newsSection__text{
-    @include headingText(1.3rem, $primaryFontColor);
-    font-weight: 700;
-}
-
-.newsSection__link {
-    display: block;
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 5px 0;
-    letter-spacing: .5px;
-}
 
 // Ask A Question Section Styles
 .questionSection {
@@ -253,30 +242,44 @@
 .latestShoots {
     @include padding-top-bottom();
     background: #efefef;
+        &__nav {
+        background: #606060;
+        margin: 15px;
+        flex-basis: calc(33% - 30px);
+        // large break point
+        @include breakPoint(large) {
+            margin: 0;
+            flex-basis: 100%;
+        }
+        &__container {
+            padding: 0px;
+            flex-direction: column;
+            flex-basis: 100%;
+            // large break point
+            @include breakPoint(large) {
+                flex-direction: row;
+            }
+        }
+    }
+    &__row {
+        // small break point
+        @include breakPoint(small) {
+        flex-direction: column;
+        }
+    }
+    &__galleryContainer {
+        position: relative;
+        margin: 15px;
+        width: calc(50%% - 30px);
+            &:hover .gallery__cell {
+                opacity: 1;
+        }
+    }
 }
 .containerFlex--latestShoots {
     // large break point
     @include breakPoint(large) {
         flex-direction: column;
-    }
-}
-
-.latestShoots__nav {
-    background: #606060;
-    margin: 15px;
-    flex-basis: calc(33% - 30px);
-    @include breakPoint(large) {
-        margin: 0;
-        flex-basis: 100%;
-    }
-    &__container {
-        padding: 0px;
-        flex-direction: column;
-        flex-basis: 100%;
-        // large break point
-        @include breakPoint(large) {
-            flex-direction: row;
-        }
     }
 }
 
@@ -293,6 +296,7 @@
     @include breakPoint(large) {
         @include headingText(1.3rem, $whiteFontColor);
     }
+    // medium break point
     @include breakPoint(medium) {
         @include headingText(1rem, $whiteFontColor);
     }
@@ -301,30 +305,9 @@
             // large break point
             @include breakPoint(large) {
                 background: transparent;
-            }
         }
-}
-
-.latestShoots__row {
-    @include breakPoint(small) {
-        flex-direction: column;
     }
 }
 
-.latestShoots__galleryCell {
-    width: 100%;
-    
-}
 
-.latestShoots__galleryContainer {
-    position: relative;
-    margin: 15px;
-    width: calc(50%% - 30px);
-    @include breakPoint(small) {
-
-    }
-        &:hover .gallery__cell {
-            opacity: 1;
-    }
-}
 

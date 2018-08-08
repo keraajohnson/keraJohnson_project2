@@ -17,10 +17,10 @@
                 <h3 class="headingThree headerMain__heading">Photography</h3>
                 <ul class="nav__container containerFlex">
                     <li class="nav__listItem"><a class="navItem" href="#">Home</a></li>
-                    <li class="nav__listItem"><a class="navItem" href="#">Gallery</a></li>
-                    <li class="nav__listItem"><a class="navItem"  href="#">Blog</a></li>
+                    <li class="nav__listItem"><a class="navItem" href="#gallery">Gallery</a></li>
+                    <li class="nav__listItem"><a class="navItem"  href="#blog">Blog</a></li>
                     <li class="nav__listItem"><a class="navItem" href="#">Bookings</a></li>
-                    <li class="nav__listItem"><a class="navItem" href="#">About Us</a></li>
+                    <li class="nav__listItem"><a class="navItem" href="#about">About Us</a></li>
                 </ul>
             </nav>
             <nav class="navMobile">
@@ -35,16 +35,16 @@
                         <a class="navMobileItem" href="#">Home</a>
                     </li>
                     <li class="navMobile__listItem">
-                        <a class="navMobileItem" href="#">Gallery</a>
+                        <a class="navMobileItem" href="#gallery">Gallery</a>
                     </li>
                     <li class="navMobile__listItem">
-                        <a class="navMobileItem" href="#">Blog</a>
+                        <a class="navMobileItem" href="#blog">Blog</a>
                     </li>
                     <li class="navMobile__listItem">
                         <a class="navMobileItem" href="#">Bookings</a>
                     </li>
                     <li class="navMobile__listItem">
-                        <a class="navMobileItem" href="#">About Us</a>
+                        <a class="navMobileItem" href="#about">About Us</a>
                     </li>
                 </ul>
             </nav>
@@ -61,7 +61,7 @@
     <!-- main section begins -->
     <main>
         <!-- section one // welcome section begins -->
-        <section class="welcomeSection textCenter">
+        <section class="welcomeSection textCenter" id="about">
             <div class="container">
                 <h2 class="headingTwo">Welcome To <span class="textBlue">Photography</span></h2>
                 <p class="paragraph main-section__paragraph welcomeSection__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut amet voluptatum placeat, beatae libero dolor asperiores, nostrum dolores eos distinctio delectus explicabo quasi odio excepturi sapiente quam temporibus corrupti corporis! Ab expedita ut quidem optio dolore saepe! Neque est quos temporibus ratione. Ex voluptatum repellendus sint eum doloribus.</p>
@@ -108,7 +108,7 @@
         </section>
         <!-- section three // testimonials section ends -->
         <!-- section four // first photo gallery starts -->
-        <section class="gallery containerFlex">
+        <section class="gallery containerFlex" id="gallery">
             <figure class="gallery__container">
                 <img class="image gallery__image" src="assets/image-3.jpeg" alt="A white woman wih brown hair in a white blouse standing in the rain, shaking her head">
                 <figcaption class="gallery__cell textCenter">
@@ -140,7 +140,7 @@
         </section>
         <!-- section four // first photo gallery ends -->
         <!-- section five //  happy clients section starts-->
-        <section class="clientsSection textCenter">
+        <section class="clientsSection textCenter" id="blog">
             <div class="container">
                 <h2 class="headingTwo heading--margin">Happy Clients</h2>
                 <div class="clientsSection__imageContainer containerFlex">
@@ -309,16 +309,16 @@
                                 <a class="navItem" href="#">Home</a>
                             </li>
                             <li class="nav__listItem">
-                                <a class="navItem" href="#">Gallery</a>
+                                <a class="navItem" href="#gallery">Gallery</a>
                             </li>
                             <li class="nav__listItem">
-                                <a class="navItem" href="#">Blog</a>
+                                <a class="navItem" href="#blog">Blog</a>
                             </li>
                             <li class="nav__listItem">
                                 <a class="navItem" href="#">Bookings</a>
                             </li>
                             <li class="nav__listItem">
-                                <a class="navItem" href="#">About Us</a>
+                                <a class="navItem" href="#about">About Us</a>
                             </li>
                         </ul>
                     </nav>
@@ -330,6 +330,7 @@
         </section>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script>
         $(function() {
             $('.hamburger').on('click', function () {
@@ -341,6 +342,9 @@
             });
             $('.navMobile a').on('click', function () {
                 $('.navMobile__menu').fadeOut("slow");
+            });
+            $('ul li a').smoothScroll({
+                speed: 900
             });
         });
     </script>
