@@ -25,11 +25,11 @@
             </nav>
             <nav class="navMobile">
                 <div class="hamburger">
-                    <i class="fas fa-bars navMobile__bars"></i>
+                    <i aria-hidden="true" class="fas fa-bars navMobile__bars"></i>
                 </div>
                 <ul class="navMobile__menu">
                     <li class="exit-responsive navMobile__listItem navMobile__exit">
-                        <i class="fas fa-times"></i>
+                        <i aria-hidden="true" class="fas fa-times"></i>
                     </li>
                     <li class="navMobile__listItem">
                         <a class="navMobileItem" href="#">Home</a>
@@ -75,17 +75,17 @@
                 <h2 class="headingTwo heading--margin">Services</h2>
                 <div class="containerFlex servicesSection__container">
                     <li class="servicesSection__cell listItem">
-                        <i class="fas fa-camera servicesSection__icon"></i>
+                        <i aria-hidden="true" class="fas fa-camera servicesSection__icon"></i>
                         <h3 class="headingThree">Portraits</h3>
                         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur laudantium iusto temporibus rerum sit ipsam quaerat. Vel, iusto distinctio.</p>
                     </li>
                     <li class="servicesSection__cell listItem">
-                        <i class="fas fa-leaf servicesSection__icon"></i>
+                        <i aria-hidden="true" class="fas fa-leaf servicesSection__icon"></i>
                         <h3 class="headingThree">Scenery</h3>
                         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur laudantium iusto temporibus rerum sit ipsam quaerat.Vel, iusto distinctio.</p>
                     </li>
                     <li class="servicesSection__cell listItem">
-                        <i class="fas fa-heart servicesSection__icon"></i>
+                        <i aria-hidden="true" class="fas fa-heart servicesSection__icon"></i>
                         <h3 class="headingThree">Weddings</h3>
                         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur laudantium iusto temporibus rerum sit ipsam quaerat. Vel, iusto distinctio.</p>
                     </li>
@@ -144,9 +144,9 @@
             <div class="container">
                 <h2 class="headingTwo heading--margin">Happy Clients</h2>
                 <div class="clientsSection__imageContainer containerFlex">
-                    <i class="fas fa-angle-left clientsSection__icon"></i>
+                    <i aria-hidden="true" class="fas fa-angle-left clientsSection__icon"></i>
                     <img class="image clientsSection__image" src="assets/image-7.jpeg" alt="Close up headshot of a woman with dark hair and dark eye make-up">
-                    <i class="fas fa-angle-right clientsSection__icon"></i>
+                    <i aria-hidden="true" class="fas fa-angle-right clientsSection__icon"></i>
                 </div>
                 <div class="clientsSection__bodyText">
                     <p class="paragraph main-section__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam mollitia voluptas, sequi dicta molestiae quaerat facere
@@ -192,9 +192,9 @@
                 <div class="container questionSection__container">
                     <h2 class="headingTwo heading--margin">Ask A Question</h2>
                     <form action="" class="questionForm">
-                        <label for="question"></label>
+                        <label class="visuallyhidden" for="question"></label>
                         <input type="text" placeholder="Your Message" name="question" class="formQuestion" id="question">
-                        <label for="send"></label>
+                        <label class="visuallyhidden" for="send"></label>
                         <input type="submit" name="send" class="btn btn--long" id="send">
                     </form>
                 </div>
@@ -257,9 +257,9 @@
     <!-- footer starts // footer main starts -->
     <footer class="footerMain">
         <div class="footerMain__socialIcons containerFlex">
-            <a class="footerMain__socialLinks" href="https://www.facebook.com/"><i class="fab fa-facebook footerMain__socialIcons__icon"></i></a>
-            <a class="footerMain__socialLinks" href="https://instagram.com"><i class="fab fa-instagram footerMain__socialIcons__icon"></i></a>
-            <a class="footerMain__socialLinks" href="https://pinterest.com"><i class="fab fa-pinterest-p footerMain__socialIcons__icon"></i></a>
+            <a class="footerMain__socialLinks" href="https://www.facebook.com/"><i title="Link to Facebook" aria-hidden="true" class="fab fa-facebook footerMain__socialIcons__icon"></i></a>
+            <a class="footerMain__socialLinks" href="https://instagram.com"><i title="Link to Instagram" aria-hidden="true" class="fab fa-instagram footerMain__socialIcons__icon"></i></a>
+            <a class="footerMain__socialLinks" href="https://pinterest.com"><i title="Link to Pinterest" aria-hidden="true" class="fab fa-pinterest-p footerMain__socialIcons__icon"></i></a>
         </div>
         <div class="container">
             <div class="containerFlex footerMain__cell__container">
@@ -271,18 +271,18 @@
                             <p class="paragraph footerMain__paragraph">info@delicate.com</p>
                         </li>
                         <li class="footerMain__listItem containerFlex">
-                            <i class="fas fa-phone footerMain__container__cell--icon footerMain__container__cell--phoneIcon"></i>
+                            <i aria-hidden="true" class="fas fa-phone footerMain__container__cell--icon footerMain__container__cell--phoneIcon"></i>
                             <p class="paragraph footerMain__paragraph">123 456-6789</p>
                         </li>
                         <li class="footerMain__listItem containerFlex">
-                            <i class="fas fa-map-pin footerMain__container__cell--icon footerMain__container__cell--pinIcon"></i>
+                            <i aria-hidden="true" class="fas fa-map-pin footerMain__container__cell--icon footerMain__container__cell--pinIcon"></i>
                             <p class="paragraph footerMain__paragraph">Toronto, ON</p>
                         </li>
                     </ul>
                     <form class="footerMain__form" action="">
-                        <label for="footerMain__emailInput"></label>
+                        <label class="visuallyhidden" for="footerMain__emailInput">Your Email Here</label>
                         <input type="email" name="footerMain__emailInput" class="footerMain__emailInput paragraph" value="your email" id="footerMain__emailInput">
-                        <button class="footerMain__button"><i class="fas fa-paper-plane"></i></button>
+                        <button class="footerMain__button"><i aria-hidden="true" class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
                 <div class="footerMain__container">
