@@ -260,14 +260,8 @@
                 flex-direction: row;
             }
         }
-    }
-    &__row {
-        // small break point
-        @include breakPoint(small) {
-        flex-direction: column;
-        }
-    }
-    &__galleryContainer {
+     }
+        &__galleryContainer {
         position: relative;
         margin: 15px;
         width: calc(50%% - 30px);
