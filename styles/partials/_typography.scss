@@ -6,13 +6,13 @@
     @include headingText($h2FontSize, $primaryFontColor)
 }
 
+.headingThree {
+    @include headingText($h3FontSize, $primaryFontColor);
+}
+
 .heading--margin {
     // margin: 20px 0;
     padding: 15px 0;
-}
-
-.headingThree {
-    @include headingText($h3FontSize, $primaryFontColor);
 }
 
 .paragraph {
