@@ -3,23 +3,50 @@
     padding-top: 50px;
 }
 
-.footerMain__container{
-    width: 33%;
-    position: relative;
-    @include breakPoint(large) {
-        width: 100%;
+.footerMain__cell__container {
+    @include breakPoint(medium) {
+        flex-direction: column;
     }
 }
 
-.footerMain__container__cell {
-    margin-left: 25px;
-    margin-top: 10px;
+.footerMain__container{
+    width: 33%;
+    @include breakPoint(medium) {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.footerMain__list {
+    margin: 0;
+    padding: 0;
+}
+
+.footerMain__listItem {
+   margin: 15px 0;
+   display: block;
+
+}
+
+.footerMain__paragraph {
+    padding-left: 30px;
+    @include breakPoint(medium) {
+        padding: 0;
+    }
 }
 
 .footerMain__container__cell--icon {
-    position: absolute;
-    font-size: 1.3rem;
-    // bottom: 10px;
+    position: relative;
+    font-size: 1.7rem;
+    top: 15px;
+    @include breakPoint(medium) {
+        top: -5px;
+    }
+}
+
+.footerMain__form {
+    position: relative;
 }
 
 .footerMain__emailInput {
@@ -28,21 +55,58 @@
     padding: 3px 0;
 }
 
+.footerMain__button {
+    position: absolute;
+    right: 150px;
+    top: 7px;
+    border: none;
+    background: transparent;
+    @include breakPoint(large) {
+        right: 100px;
+    }
+    @include breakPoint(small) {
+        right: 60px;
+    }
+}
+
 .footerMain__aboutUs__paragraph {
     max-width: 55%;
+    @include breakPoint(medium) {
+        max-width: 100%;
+    }
 }
 
 .footerMain__instagram {
     width: calc(20% - 10px);
     margin: 5px;
+    @include breakPoint(large) {
+        width: calc(60% - 10px);
+    }
+    @include breakPoint(medium) {
+        width: calc(30% - 10px);
+    }
 }
 
 .footerNav {
     padding: 30px 0 20px 0;
     width: 40%;
     margin: 0 auto;
+    text-align: center;
     @include breakPoint(large) {
         width: 70%;
+    }
+    @include breakPoint(medium) {
+        width: 80%;
+    }
+    @include breakPoint(small) {
+        width: 100%;
+    }
+}
+
+.navItem {
+    font-size: 1.5rem;
+    @include breakPoint(medium) {
+        font-size: 1rem;
     }
 }
 

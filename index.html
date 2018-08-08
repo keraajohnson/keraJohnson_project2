@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600,700|Lato" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Photography</title>
-
-    <!-- FOOTER ICON COLOUR: #848484; -->
 </head>
 <body>
     <!-- header section starts -->
@@ -25,10 +23,37 @@
                     <li class="nav__listItem"><a class="navItem" href="#">About Us</a></li>
                 </ul>
             </nav>
+            <nav class="navMobile">
+                <div class="hamburger">
+                    <i class="fas fa-bars navMobile__bars"></i>
+                </div>
+                <ul class="navMobile__menu">
+                    <li class="exit-responsive navMobile__listItem navMobile__exit">
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="navMobile__listItem">
+                        <a class="navMobileItem" href="#">Home</a>
+                    </li>
+                    <li class="navMobile__listItem">
+                        <a class="navMobileItem" href="#">Gallery</a>
+                    </li>
+                    <li class="navMobile__listItem">
+                        <a class="navMobileItem" href="#">Blog</a>
+                    </li>
+                    <li class="navMobile__listItem">
+                        <a class="navMobileItem" href="#">Bookings</a>
+                    </li>
+                    <li class="navMobile__listItem">
+                        <a class="navMobileItem" href="#">About Us</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="container headerMain__welcome containerFlex">
-                <h1 class="headingOne">Welcome</h1>
-                <p class="paragraph headerMain__paragraph">To My Photography Website</p>
-                <button class="btn">Start</button>
+                <div class="headerMain__welcome__container">
+                    <h1 class="headingOne headerMain__welcome__heading">Welcome</h1>
+                    <p class="paragraph headerMain__paragraph">To My Photography Website</p>
+                    <button class="btn btn--start">Start</button>
+                </div>
             </div>
         </div>
     </header>
@@ -47,8 +72,8 @@
         <!-- section two // services section starts -->
         <section class="servicesSection textCenter containerFlex">
             <div class="container">
-                <h2 class="headingTwo">Services</h2>
-                <div class="containerFlex">
+                <h2 class="headingTwo heading--margin">Services</h2>
+                <div class="containerFlex servicesSection__container">
                     <li class="servicesSection__cell listItem">
                         <i class="fas fa-camera servicesSection__icon"></i>
                         <h3 class="headingThree">Portraits</h3>
@@ -71,9 +96,9 @@
         <!-- section three // testimonials section starts -->
         <section class="testimonialsSection">
             <div class="container">
-                <h2 class="headingTwo textCenter">Testimonials</h2>
-                <div class="containerFlex">
-                        <img src="assets/image-2.jpeg" alt="Tall white woman standing and smiling in a field with mountains behind her. She has long brown hair and is wearing a white blouse and an orange skirt">
+                <h2 class="headingTwo heading--margin textCenter">Testimonials</h2>
+                <div class="containerFlex testimonialsSection__cell__container">
+                        <img class="image" src="assets/image-2.jpeg" alt="Tall white woman standing and smiling in a field with mountains behind her. She has long brown hair and is wearing a white blouse and an orange skirt">
                     <div class="testimonialsSection__text containerFlex">
                         <h3 class="headingThree testimonialsSection__heading">Kate Sampson</h3>
                         <p class="paragraph main-section__paragraph testimonialsSection__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem unde tempore aliquam ipsam assumenda eligendi enim perspiciatis quos libero esse modi voluptatum eum exercitationem, aspernatur inventore minus a ex.</p>
@@ -85,28 +110,28 @@
         <!-- section four // first photo gallery starts -->
         <section class="gallery containerFlex">
             <figure class="gallery__container">
-                <img class="image__size" src="assets/image-3.jpeg" alt="A white woman wih brown hair in a white blouse standing in the rain, shaking her head">
+                <img class="image gallery__image" src="assets/image-3.jpeg" alt="A white woman wih brown hair in a white blouse standing in the rain, shaking her head">
                 <figcaption class="gallery__cell textCenter">
                     <h3 class="headingThree gallery__cell__text">Sample Text</h3>
                     <p class="paragraph gallery__cell__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </figcaption>
             </figure>
             <figure class="gallery__container">
-                <img class="imageSize" src="assets/image-4.jpeg" alt="A small church-like structure on on island surrounded by dark teal water">
+                <img class="image gallery__image" src="assets/image-4.jpeg" alt="A small church-like structure on on island surrounded by dark teal water">
                 <figcaption class="gallery__cell textCenter">
                     <h3 class="headingThree gallery__cell__text">Sample Text</h3>
                     <p class="paragraph gallery__cell__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </figcaption>
             </figure>
             <figure class="gallery__container">
-                <img class="imageSize" src="assets/image-5.jpeg" alt="Lush green moss covers tall mountians on a beach with two boats parked on it">
+                <img class="image gallery__image" src="assets/image-5.jpeg" alt="Lush green moss covers tall mountians on a beach with two boats parked on it">
                 <figcaption class="gallery__cell textCenter">
                     <h3 class="headingThree gallery__cell__text">Sample Text</h3>
                     <p class="paragraph gallery__cell__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </figcaption>
             </figure>
             <figure class="gallery__container">
-                <img class="imageSize" src="assets/image-6.jpeg" alt="The coast of a European city">
+                <img class="image gallery__image" src="assets/image-6.jpeg" alt="The coast of a European city">
                 <figcaption class="gallery__cell textCenter">
                     <h3 class="headingThree gallery__cell__text">Sample Text</h3>
                     <p class="paragraph gallery__cell__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
@@ -117,10 +142,10 @@
         <!-- section five //  happy clients section starts-->
         <section class="clientsSection textCenter">
             <div class="container">
-                <h2 class="headingTwo">Happy Clients</h2>
+                <h2 class="headingTwo heading--margin">Happy Clients</h2>
                 <div class="clientsSection__imageContainer containerFlex">
                     <i class="fas fa-angle-left clientsSection__icon"></i>
-                    <img class="clientsSection__image" src="assets/image-7.jpeg" alt="Close up headshot of a woman with dark hair and dark eye make-up">
+                    <img class="image clientsSection__image" src="assets/image-7.jpeg" alt="Close up headshot of a woman with dark hair and dark eye make-up">
                     <i class="fas fa-angle-right clientsSection__icon"></i>
                 </div>
                 <div class="clientsSection__bodyText">
@@ -136,24 +161,24 @@
         <!-- section six // latest news section starts -->
         <section class="newsSection textCenter">
             <div class="container">
-                <h2 class="headingTwo">Latest News</h2>
-                <div class="containerFlex">
+                <h2 class="headingTwo heading--margin">Latest News</h2>
+                <div class="containerFlex newsSection__container">
                     <figure class="newsSection__cell">
-                        <img src="assets/image-8.jpeg" alt="An image of the Italian Coast, dark teal water surrounded with mountains with houses on the side of them">
+                        <img class="image newsSection__image" src="assets/image-8.jpeg" alt="An image of the Italian Coast, dark teal water surrounded with mountains with houses on the side of them">
                         <figcaption>
                             <p class="newsSection__text">My Trip to Italy</p>
                             <a href="#" class="textBlue newsSection__link">Read More >></a>
                         </figcaption>
                     </figure>
                     <figure class="newsSection__cell">
-                        <img src="assets/image-9.jpeg" alt="Two chairs outside of a blue and white villa in Greece">
+                        <img class="image newsSection__image" src="assets/image-9.jpeg" alt="Two chairs outside of a blue and white villa in Greece">
                         <figcaption>
                             <p class="newsSection__text">Greece Photoshoot</p>
                             <a href="#" class="textBlue newsSection__link">Read More >></a>
                         </figcaption>
                     </figure>
                     <figure class="newsSection__cell">
-                        <img src="assets/image-10.jpeg" alt="A tall woman with long dark hair in a stairwell with her face turned away from the camera">
+                        <img class="image newsSection__image" src="assets/image-10.jpeg" alt="A tall woman with long dark hair in a stairwell with her face turned away from the camera">
                         <figcaption>
                             <p class="newsSection__text">Travelling with Your Partner</p>
                             <a href="#" class="textBlue newsSection__link">Read More >></a>
@@ -165,12 +190,12 @@
             <!-- section seven // ask a question section starts -->
             <section class="questionSection textCenter">
                 <div class="container questionSection__container">
-                    <h2 class="headingTwo">Ask A Question</h2>
+                    <h2 class="headingTwo heading--margin">Ask A Question</h2>
                     <form action="" class="questionForm">
                         <label for="question"></label>
-                        <input type="text" name="question" class="formQuestion" id="question">
+                        <input type="text" placeholder="Your Message" name="question" class="formQuestion" id="question">
                         <label for="send"></label>
-                        <input type="submit" name="send" class="btn" id="send">
+                        <input type="submit" name="send" class="btn btn--long" id="send">
                     </form>
                 </div>
             </div>
@@ -191,33 +216,37 @@
                 </div>
                 <!-- section eight gallery -->
                 <div class="latestShoots__gallery containerFlex">
-                    <div class="latestShoots__galleryCell">
-                        <figure class="latestShoots__galleryContainer">
-                            <img class="latestShoots__image" src="assets/image-11.jpeg" alt="A birds eye view of a stunningly tall waterfall that pools in dark teal water">
-                            <figcaption class="gallery__cell textCenter">
-                                <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
-                            </figcaption>
-                        </figure>
-                        <figure class="latestShoots__galleryContainer">
-                            <img src="assets/image-12.jpeg" alt="A small village on the coast of a European city">
-                            <figcaption class="gallery__cell textCenter">
-                                <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
-                            </figcaption>
-                        </figure>
+                    <div class="latestShoots__galleryCell latestShoots__gallery containerFlex">
+                        <div class="latestShoots__row">
+                            <figure class="latestShoots__galleryContainer">
+                                <img class="image latestShoots__image" src="assets/image-11.jpeg" alt="A birds eye view of a stunningly tall waterfall that pools in dark teal water">
+                                <figcaption class="gallery__cell textCenter">
+                                    <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
+                                </figcaption>
+                            </figure>
+                            <figure class="latestShoots__galleryContainer">
+                                <img class=" image latestShoots__image" src="assets/image-13.jpeg" alt="A birds eye view of two boats parked on a beach surrounded by people and light blue sea water">
+                                <figcaption class="gallery__cell textCenter">
+                                    <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
                     <div class="latestShoots__galleryCell">
-                        <figure class="latestShoots__galleryContainer">
-                            <img class="latestShoots__image" src="assets/image-13.jpeg" alt="A birds eye view of two boats parked on a beach surrounded by people and light blue sea water">
-                            <figcaption class="gallery__cell textCenter">
-                                <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
-                            </figcaption>
-                        </figure>
-                        <figure class="latestShoots__galleryContainer">
-                            <img src="assets/image-14.jpeg" alt="A large mountain in the middle of a beach and light blue water">
-                            <figcaption class="gallery__cell textCenter">
-                                <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
-                            </figcaption>
-                        </figure>
+                        <div class="latestShoots__row">
+                            <figure class="latestShoots__galleryContainer">
+                                <img class="image" src="assets/image-12.jpeg" alt="A small village on the coast of a European city">
+                                <figcaption class="gallery__cell textCenter">
+                                    <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
+                                </figcaption>
+                            </figure>
+                            <figure class="latestShoots__galleryContainer">
+                                <img class="image" src="assets/image-14.jpeg" alt="A large mountain in the middle of a beach and light blue water">
+                                <figcaption class="gallery__cell textCenter">
+                                    <h3 class="headingThree gallery__cell__text">LANDING PAGE</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,26 +257,35 @@
     <!-- footer starts // footer main starts -->
     <footer class="footerMain">
         <div class="container">
-            <div class="containerFlex">
+            <div class="containerFlex footerMain__cell__container">
                 <div class="footerMain__container">
-                    <h3 class="headingThree">Contact</h3>
-                    <i class="far fa-envelope footerMain__container__cell--icon footerMain__container__cell--emailIcon"></i>
-                    <p class="paragraph footerMain__container__cell">info@delicate.com</p>
-                    <i class="fas fa-phone footerMain__container__cell--icon footerMain__container__cell--phoneIcon"></i>
-                    <p class="paragraph footerMain__container__cell">123 456-6789</p>
-                    <i class="fas fa-map-pin footerMain__container__cell--icon footerMain__container__cell--pinIcon"></i>
-                    <p class="paragraph footerMain__container__cell">Toronto, ON</p>
+                    <ul class="footerMain__list">
+                        <h3 class="headingThree heading--margin">Contact</h3>
+                        <li class="footerMain__listItem containerFlex">
+                            <i class="far fa-envelope footerMain__container__cell--icon footerMain__container__cell--emailIcon"></i>
+                            <p class="paragraph footerMain__paragraph">info@delicate.com</p>
+                        </li>
+                        <li class="footerMain__listItem containerFlex">
+                            <i class="fas fa-phone footerMain__container__cell--icon footerMain__container__cell--phoneIcon"></i>
+                            <p class="paragraph footerMain__paragraph">123 456-6789</p>
+                        </li>
+                        <li class="footerMain__listItem containerFlex">
+                            <i class="fas fa-map-pin footerMain__container__cell--icon footerMain__container__cell--pinIcon"></i>
+                            <p class="paragraph footerMain__paragraph">Toronto, ON</p>
+                        </li>
+                    </ul>
                     <form class="footerMain__form" action="">
                         <label for="footerMain__emailInput"></label>
                         <input type="email" name="footerMain__emailInput" class="footerMain__emailInput paragraph" value="your email" id="footerMain__emailInput">
+                        <button class="footerMain__button"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
                 <div class="footerMain__container">
-                    <h3 class="headingThree">About Us</h3>
+                    <h3 class="headingThree heading--margin">About Us</h3>
                     <p class="paragraph footerMain__aboutUs__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum ab tempora eaque deleniti odit mollitia maiores iusto laborum ipsa. Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="footerMain__container">
-                    <h3 class="headingThree">Instagram</h3>
+                    <h3 class="headingThree heading--margin">Instagram</h3>
                     <div class="footerMain__instagramCell containerFlex">
                         <img class="footerMain__instagram" src="assets/image-15.jpeg" alt="Kayak floating in teal water">
                         <img class="footerMain__instagram" src="assets/image-16.jpeg" alt="Laundry hanging in front of an orange doorway">
@@ -266,7 +304,7 @@
             <section class="footerNav">
                 <h3 class="headingThree textCenter">Photography</h3>
                     <nav>
-                        <ul class="footerNav__container nav__container">
+                        <ul class="footerNav__container containerFlex">
                             <li class="nav__listItem">
                                 <a class="navItem" href="#">Home</a>
                             </li>
@@ -291,5 +329,20 @@
             <p class="paragraph footerEnd__paragraph textCenter">2017 All Rights Reserved</p>
         </section>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('.hamburger').on('click', function () {
+                $('.navMobile__menu').fadeIn("slow");
+            });
+
+            $('.exit-responsive').on('click', function () {
+                $('.navMobile__menu').fadeOut("slow");
+            });
+            $('.navMobile a').on('click', function () {
+                $('.navMobile__menu').fadeOut("slow");
+            });
+        });
+    </script>
 </body>
 </html>

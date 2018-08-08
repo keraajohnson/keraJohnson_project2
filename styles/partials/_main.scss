@@ -17,6 +17,12 @@
     width: 100%;
 }
 
+.servicesSection__container {
+    // large break point
+    @include breakPoint(large) {
+        flex-direction: column;
+    }
+}
 .servicesSection__cell  {
     width: 33%;
     padding: 30px 55px;
@@ -24,8 +30,10 @@
         // large break point
         @include breakPoint(large) {
             padding: 0;
+            margin: 25px auto;
+            width: 80%;
         }
-}
+    }
 
 .servicesSection__icon {
     font-size: 3rem;
@@ -41,6 +49,24 @@
     margin: 10px 0px 10px 20px;
 }
 
+.testimonialsSection__cell__container {
+    // large break point
+    @include breakPoint(large) {
+        width: 60%;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+    // medium break point
+    @include breakPoint(medium) {
+        width: 80%;
+    }
+    // small break point
+    @include breakPoint(small) {
+        width: 100%;
+    }
+}
+
 .testimonialsSection__text {
     flex-direction: column;
     justify-content: center;
@@ -49,6 +75,15 @@
 .testimonialsSection__paragraph {
     max-width: 70%;
     margin: 10px 0px 10px 20px;
+    @include breakPoint(large) {
+        max-width: 100%;
+    }
+    @include breakPoint(medium) {
+        max-width: 100%;
+    }
+    @include breakPoint(small) {
+        max-width: 100%;
+    }
 }
 
 // Gallery Section Styles SECTION FOUR
@@ -56,7 +91,18 @@
 .gallery__container {
     width: 25%;
     position: relative;
-    flex-wrap: wrap;
+    // medium break point
+    @include breakPoint(medium) {
+        display: none;
+    }
+}
+
+.gallery__image {
+    height: 100%;
+    // large break point
+    @include breakPoint(large) {
+        height: 80%;
+    }
 }
 
 .gallery__container:hover .gallery__cell {
@@ -92,7 +138,6 @@
     }
 }
 
-
 // Happy Clients Section Styles SECTION FIVE
 .clientsSection {
     @include padding-top-bottom();
@@ -104,8 +149,14 @@
 }
 
 .clientsSection__image {
-    width: 10%;
+    width: 11%;
     margin: 15px;
+    @include breakPoint(medium) {
+        width: 20%;
+    }
+    @include breakPoint(small) {
+        width: 30%;
+    }
 }
 
 .clientsSection__icon {
@@ -114,19 +165,42 @@
     margin-top: 45px;
 }
 
-.paragraph--italic {
-    margin: 10px 0;
-}
-
 // Latest News Section Styles
 .newsSection {
     @include padding-top-bottom();
     background: #f5f3f3;
 }
 
+.newsSection__container {
+   // large break point
+    @include breakPoint(large) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+.newsSection__image {
+    height: 80%;
+}
+
 .newsSection__cell {
+    width: 33%;
     margin: 0 10px;
     text-align: left;
+    // large break point
+    @include breakPoint(large) {
+        width: 65%;
+        margin: 25px auto;
+        text-align: center;
+    }
+    // medium break point
+    @include breakPoint(medium) {
+        width: 80%;
+    }
+    // small break point
+    @include breakPoint(small) {
+        width: 90%;
+    }
 }
 
 .newsSection__text{
@@ -161,6 +235,11 @@
 }
 
 .formQuestion {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
     align-self: stretch;
     padding: 10px 0;
     border: none;
@@ -203,7 +282,7 @@
 
 .listItem--latestShoots {
     @include headingText(2.8rem, $whiteFontColor);
-    flex-basis: 100%;
+    width: 100%;
     display: block;
     margin: 30px 0;
     list-style: none;
@@ -211,29 +290,41 @@
     text-align: center;
     transition: all .5s;
     // large break point
-    @include breakPoint (large) {
+    @include breakPoint(large) {
         @include headingText(1.3rem, $whiteFontColor);
+    }
+    @include breakPoint(medium) {
+        @include headingText(1rem, $whiteFontColor);
     }
         &:hover {
             background: #2a2a2a;
+            // large break point
             @include breakPoint(large) {
                 background: transparent;
             }
         }
 }
 
+.latestShoots__row {
+    @include breakPoint(small) {
+        flex-direction: column;
+    }
+}
+
 .latestShoots__galleryCell {
     width: 100%;
+    
 }
 
 .latestShoots__galleryContainer {
     position: relative;
     margin: 15px;
-    width: calc(100% - 30px);
-    @include breakPoint(large) {
-       
+    width: calc(50%% - 30px);
+    @include breakPoint(small) {
+
     }
         &:hover .gallery__cell {
             opacity: 1;
     }
 }
+

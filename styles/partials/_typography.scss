@@ -6,12 +6,20 @@
     @include headingText($h2FontSize, $primaryFontColor)
 }
 
+.heading--margin {
+    margin: 20px 0;
+}
+
 .headingThree {
     @include headingText($h3FontSize, $primaryFontColor);
 }
 
 .paragraph {
     @include paragraph(1.2rem)
+}
+
+.paragraph--italic {
+    margin: 10px 0;
 }
 
 .main-section__paragraph {
@@ -47,4 +55,19 @@
         }
 }
 
+.btn--long {
+    width: 170px;
+}
+
+.btn--start {
+    @include breakPoint(large) {
+        display: none;
+    }
+    @include breakPoint(medium) {
+        display: none;
+    }
+    @include breakPoint(small) {
+        display: none;
+    }
+}
 
